@@ -1,0 +1,145 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "0d990ed9-23a8-4951-88c5-e16930699ff5": {
+        "id": "0d990ed9-23a8-4951-88c5-e16930699ff5",
+        "parent": null,
+        "name": "PlayGround.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "PlayGround.js",
+        "cursor": {
+          "lineNumber": 6,
+          "column": 46
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "29c069ce-633a-4b93-87fb-8c2f3d01b0bb": {
+            "id": "29c069ce-633a-4b93-87fb-8c2f3d01b0bb",
+            "name": "first",
+            "functionId": "0d990ed9-23a8-4951-88c5-e16930699ff5",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "0a522e5f-4a1e-435d-a6a8-709baa1da3bf": {
+        "id": "0a522e5f-4a1e-435d-a6a8-709baa1da3bf",
+        "parent": null,
+        "name": "another.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "another.js",
+        "cursor": {
+          "lineNumber": 8,
+          "column": 40
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 30,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "sqstemp",
+            "config": {
+              "BatchSize": "1"
+            }
+          }
+        ],
+        "testCases": {
+          "6b3af9eb-c75b-4779-abcc-fea029184b28": {
+            "id": "6b3af9eb-c75b-4779-abcc-fea029184b28",
+            "name": "second",
+            "functionId": "0a522e5f-4a1e-435d-a6a8-709baa1da3bf",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "0d990ed9-23a8-4951-88c5-e16930699ff5",
+      "0a522e5f-4a1e-435d-a6a8-709baa1da3bf"
+    ],
+    "currentFileId": "0a522e5f-4a1e-435d-a6a8-709baa1da3bf",
+    "resources": {
+      "sqstemp": {
+        "name": "sqstemp",
+        "type": "SQS",
+        "config": {
+          "mode": 1,
+          "existing": true,
+          "name": "temp",
+          "url": "https://sqs.us-east-1.amazonaws.com/263248768798/temp",
+          "selectedRegion": "us-east-1",
+          "deliveryDelay": "0",
+          "deliveryDelayUnit": "seconds",
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": "30",
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": "345600",
+          "messageRetentionPeriodUnit": "seconds",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": "0",
+          "queueARN": "arn:aws:sqs:us-east-1:263248768798:temp"
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "PlayGround",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1585142816706
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "playground",
+      "url": "https://github.com/asankhaperera/playground"
+    }
+  }
+}
