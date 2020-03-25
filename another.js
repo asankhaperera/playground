@@ -3,7 +3,7 @@ const sqs = new AWS.SQS();
 
 exports.handler = async (event) => {
 
-    console.log("Hello world from the other receive");
+    console.log("Hello world from the other receive yyy");
 
     console.log(JSON.stringify(event));
 

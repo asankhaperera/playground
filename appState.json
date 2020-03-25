@@ -12,7 +12,7 @@
         "filePath": "PlayGround.js",
         "cursor": {
           "lineNumber": 6,
-          "column": 46
+          "column": 50
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -42,8 +42,8 @@
         "isRemovable": true,
         "filePath": "another.js",
         "cursor": {
-          "lineNumber": 8,
-          "column": 40
+          "lineNumber": 6,
+          "column": 56
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -65,6 +65,37 @@
             "id": "6b3af9eb-c75b-4779-abcc-fea029184b28",
             "name": "second",
             "functionId": "0a522e5f-4a1e-435d-a6a8-709baa1da3bf",
+            "event": "{\r\n    \"Records\": [\r\n        {\r\n            \"messageId\": \"cb85c6c7-bf39-473b-8b5d-858314e4ea31\",\r\n            \"receiptHandle\": \"AQEBNH+E2wj2PjcGYNtyVkbvQZSXY9RaARKctY44ZEoe1NCeUhrKg1P4L8MrxHRM9zgqc1CAgUG+wnL+7FjMn1takC9pAeFNMEi7wDRDxJctv13ncFrpzgwDT9r9PNI5kxA/ZKpiLb7bAKyLU/7sKjITtEiQ0nfZQ9IGNcYD6r1ppcf2WmFcpg/Zdg00ntdhyjOKI6TSQ6UGIua8nDmV6oU7vUhR2sUkGRoe/xaBw4ppNUeV/FIhjIuakSfFaSn6n3aRi+96DvmWDKiXXQ2WMekpRpyjukTORqRk1bXFahL941/hfbuAYMS4DQ0jAj57PMp+6tX+p2PQMWwhfn0aVwtVdWBiWy4025BOBSz+NgmjR770gl3tNRYal1T0Dt7kXL6D\",\r\n            \"body\": \"Hello World\",\r\n            \"attributes\": {\r\n                \"ApproximateReceiveCount\": \"1\",\r\n                \"SentTimestamp\": \"1585143042273\",\r\n                \"SenderId\": \"AROAT2SWZN4PKC7VE4GQ4:Sigma-Test-Runner\",\r\n                \"ApproximateFirstReceiveTimestamp\": \"1585143042284\"\r\n            },\r\n            \"messageAttributes\": {},\r\n            \"md5OfBody\": \"b10a8db164e0754105b7a99be72e3fe5\",\r\n            \"eventSource\": \"aws:sqs\",\r\n            \"eventSourceARN\": \"arn:aws:sqs:us-east-1:263248768798:temp\",\r\n            \"awsRegion\": \"us-east-1\"\r\n        }\r\n    ]\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "8a21cf6a-5440-42d1-af39-c8998190356f": {
+        "id": "8a21cf6a-5440-42d1-af39-c8998190356f",
+        "parent": null,
+        "name": "test-python.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test-python.py",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 29
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "15d6fefc-8824-4752-aeb8-724d3e3a8002": {
+            "id": "15d6fefc-8824-4752-aeb8-724d3e3a8002",
+            "name": "Test event",
+            "functionId": "8a21cf6a-5440-42d1-af39-c8998190356f",
             "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
             "eventTemplate": "hello-world"
           }
@@ -73,9 +104,10 @@
     },
     "openFiles": [
       "0d990ed9-23a8-4951-88c5-e16930699ff5",
-      "0a522e5f-4a1e-435d-a6a8-709baa1da3bf"
+      "0a522e5f-4a1e-435d-a6a8-709baa1da3bf",
+      "8a21cf6a-5440-42d1-af39-c8998190356f"
     ],
-    "currentFileId": "0a522e5f-4a1e-435d-a6a8-709baa1da3bf",
+    "currentFileId": "0d990ed9-23a8-4951-88c5-e16930699ff5",
     "resources": {
       "sqstemp": {
         "name": "sqstemp",
@@ -133,7 +165,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1585142816706
+    "lastSave": 1585155255092
   },
   "VCS_STATE": {
     "provider": "GitHub",
